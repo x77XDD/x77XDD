@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{65178795-3FC9-45E1-9583-8E9CCA8223AA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>dyz1</RootNamespace>
+    <AssemblyName>dyz1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TAddcourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TAddcourse.designer.cs">
+      <DependentUpon>TAddcourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SChangeinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SChangeinfo.Designer.cs">
+      <DependentUpon>SChangeinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePwd.Designer.cs">
+      <DependentUpon>ChangePwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SCoursequit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCoursequit.Designer.cs">
+      <DependentUpon>SCoursequit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB.cs" />
+    <Compile Include="MForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MForm1.Designer.cs">
+      <DependentUpon>MForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SForm2.Designer.cs">
+      <DependentUpon>SForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MFrom.Designer.cs">
+      <DependentUpon>MFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SMycourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SMycourse.Designer.cs">
+      <DependentUpon>SMycourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SOpinion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOpinion.Designer.cs">
+      <DependentUpon>SOpinion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StuCou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StuCou.designer.cs">
+      <DependentUpon>StuCou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tcourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tcourse.Designer.cs">
+      <DependentUpon>Tcourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TForm.Designer.cs">
+      <DependentUpon>TForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TOpinion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOpinion.designer.cs">
+      <DependentUpon>TOpinion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tselect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tselect.designer.cs">
+      <DependentUpon>Tselect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tzhuce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tzhuce.Designer.cs">
+      <DependentUpon>Tzhuce.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TAddcourse.resx">
+      <DependentUpon>TAddcourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SChangeinfo.resx">
+      <DependentUpon>SChangeinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePwd.resx">
+      <DependentUpon>ChangePwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCoursequit.resx">
+      <DependentUpon>SCoursequit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MForm1.resx">
+      <DependentUpon>MForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SForm2.resx">
+      <DependentUpon>SForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MFrom.resx">
+      <DependentUpon>MFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SMycourse.resx">
+      <DependentUpon>SMycourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOpinion.resx">
+      <DependentUpon>SOpinion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StuCou.resx">
+      <DependentUpon>StuCou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tcourse.resx">
+      <DependentUpon>Tcourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TForm.resx">
+      <DependentUpon>TForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOpinion.resx">
+      <DependentUpon>TOpinion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tselect.resx">
+      <DependentUpon>Tselect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tzhuce.resx">
+      <DependentUpon>Tzhuce.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\backimage1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\panda.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\shang.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
